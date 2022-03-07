@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Connect 4</title>
+</head>
+
+<body>
+    <div id="gameDiv">
+        <form id="startForm">
+            <div id="gameOptions">
+                <div id="one">
+                    <h3>Board</h3>
+                    <label for="cols">Columns number</label>
+                    <select name="cols" id="cols">
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select><br />
+                    <label for="rows">Rows number</label>
+                    <select name="rows" id="rows">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div id="two">
+                    <h3>Players</h3>
+                    <input type="text" id="player1" value="Player 1" placeholder="Player 1" />
+                    <input type="color" name="colorPA" id="colorPA" value="#FF0000" /><br />
+                    <input type="text" id="player2" value="Player 2" placeholder="Player 2" />
+                    <input type="color" name="colorPB" id="colorPB" value="#ecca00" /><br />
+                </div>
+            </div>
+            <div id="btn_div">
+                <button id="start_btn" type="submit">Start game</button>
+            </div>
+        </form>
+        <div id="ingameOptions">
+            <h1 id="turn"></h1>
+            <div id="playerTurnColor"></div>
+            <div id="ingameBtns">
+                <button id="undo" disabled>Undo</button>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </div>
+    <div id="gameBoard">
+        <!-- <table id="board"></table> -->
+    </div>
+    <div id="resBoard"></div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

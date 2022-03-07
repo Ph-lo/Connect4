@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Outfit', sans-serif;
+}
+
+button,
+input,
+select {
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#player1,
+#player2 {
+    padding: 2px;
+    padding-left: 5px;
+}
+
+#start_btn {
+    padding: 3px;
+}
+
+#start_btn:hover,
+#undo:hover,
+#restart:hover {
+    box-shadow: 0 1px 3px whitesmoke;
+}
+
+#gameDiv {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+#ingameOptions {
+    display: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -2px rgba(196, 196, 196, 0.644);
+}
+
+#turn {
+    text-align: center;
+}
+
+#playerTurnColor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 45%;
+    box-shadow: inset 2px 3px 3px black;
+}
+
+#ingameBtns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#undo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gameOptions {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -2px rgba(196, 196, 196, 0.644);
+}
+
+#cols {
+    margin-left: 5px;
+}
+
+#rows {
+    margin-left: 29px;
+}
+
+#btn_div {
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    border: 1px solid blue;
+    background-color: blue;
+    margin: auto;
+    box-shadow: 0 -10px 10px -2px rgba(66, 66, 66, 0.644);
+    border-radius: 5px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);
+    box-shadow: inset 2px 3px 3px black;
+}
+
+#resBoard {
+    width: 55%;
+    margin: 30px auto auto auto;
+    padding: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    border: 1px dashed rgb(211, 211, 211);
+    border-radius: 10px;
+    display: none;
+}
+
+#resBoard h3 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+#resBoard button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
